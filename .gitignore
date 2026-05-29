@@ -1,0 +1,80 @@
+# === Foundation 2026 — .gitignore ===
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*.nbconvert.*
+
+# --- Virtual Environments ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- Data files (keep data OUT of the repo — link in DATA_SOURCES.md) ---
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.db
+*.sqlite
+*.sqlite3
+data/raw/
+data/processed/
+
+# --- Model artefacts (large files — use HuggingFace or GDrive links instead) ---
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.savedmodel/
+*.keras
+*.joblib
+models/*.bin
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- OS ---
+.DS_Store
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# --- Environment / Secrets ---
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+token.json
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Misc ---
+*.tmp
+*.bak
+*.orig
