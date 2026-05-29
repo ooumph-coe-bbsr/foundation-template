@@ -1,6 +1,6 @@
-# Model Card
+# Model / System Card
 
-_Based on [Mitchell et al. 2019 — Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993)_
+A short, honest summary of what you built — what it does, what data it used, how well it works, where it fails, and whether it's safe to use. Pair this with [`VALIDATION.md`](VALIDATION.md), which shows *how* the numbers were measured.
 
 ---
 
@@ -8,71 +8,104 @@ _Based on [Mitchell et al. 2019 — Model Cards for Model Reporting](https://arx
 
 | Field | Detail |
 |---|---|
-| **Model name** | _e.g. Leaf Disease Classifier v1_ |
-| **Developer** | <Name>, Roll <Roll> |
-| **Date** | YYYY-MM-DD |
-| **Type** | _e.g. Image classification (CNN) / Regression / Clustering_ |
-| **Framework** | _e.g. Keras, scikit-learn, Teachable Machine, Edge Impulse_ |
-| **Version** | _v1.0_ |
-
-## Intended Use
-
-- **Primary use:** _What is this model designed to do?_
-- **Intended users:** _Who would use this?_
-- **Out-of-scope uses:** _What should this NOT be used for?_
-
-## Training Data
-
-| Item | Detail |
-|---|---|
-| Source | _Dataset name, URL, or "self-collected"_ |
-| Size | _e.g. 500 images, 3 classes_ |
-| Split | _Train / Val / Test ratio_ |
-| Preprocessing | _Resize, augmentation, normalisation steps_ |
-| Licence | _CC-BY, MIT, proprietary, etc._ |
-| PII | _Does the data contain personal information? If yes, how is it handled?_ |
-
-## Performance
-
-| Metric | Value |
-|---|---|
-| Accuracy | ___ |
-| Precision | ___ |
-| Recall | ___ |
-| F1 Score | ___ |
-| Other | ___ |
-
-### Performance by subgroup (if applicable)
-
-| Subgroup | Metric | Value |
-|---|---|---|
-| _e.g. Class A_ | _Accuracy_ | ___ |
-| _e.g. Class B_ | _Accuracy_ | ___ |
-
-## Limitations
-
-- _Known failure cases_
-- _Data gaps (e.g. only daytime images, only one crop variety)_
-- _Bias risks_
-
-## Ethical Considerations
-
-- _Any potential for harm or misuse?_
-- _Privacy implications?_
-- _Consent obtained for data collection?_
-- _Compliant with DPDP Act?_
-
-## How to Use
-
-```python
-# Example inference code or instructions
-```
-
-## Citation
-
-_If you used someone else's model or dataset, cite it here._
+| **Model name** | `<e.g. Leaf Disease Classifier v1>` |
+| **Developer** | `<Name>`, Roll `<Roll>` |
+| **Branch / Domain** | `<e.g. Civil — crack detection / Mechanical — fault sound>` |
+| **Date** | `<YYYY-MM-DD>` |
+| **Type** | `<e.g. Image classification / Regression / Clustering>` |
+| **Tool / Framework** | `<e.g. Teachable Machine, Hugging Face, scikit-learn, Keras, Edge Impulse>` |
+| **Version** | `v1.0` |
 
 ---
 
-> **Note:** This model card is a learning exercise. It trains you to think critically
-> about what you build — who it affects, where it fails, and whether it should be deployed.
+## Intended Use
+
+- **Primary use:** `<what is this model designed to do?>`
+- **Intended users:** `<who would use this?>`
+- **Out-of-scope uses:** `<what should this NOT be used for?>`
+
+> This is a **learning prototype** built during the Foundation Programme. It is **not certified for real-world deployment** without further testing and validation.
+
+---
+
+## Training / Input Data
+
+| Item | Detail |
+|---|---|
+| Source | `<dataset name, URL, or "self-collected">` |
+| Size | `<e.g. 500 images across 3 classes>` |
+| Split | `<Train / Val / Test ratio — or "tool handled it" for no-code>` |
+| Preprocessing | `<resize, augmentation, normalisation — or "none">` |
+| Licence | `<CC-BY, MIT, public-government, self-collected, etc.>` |
+| Personal data | `<None / or describe any personal data and how consent was handled>` |
+
+---
+
+## Performance
+
+Fill in **whatever your tool reports — accuracy is the minimum.** Leave the rest blank if your (no-code) tool doesn't show them. Attach a **confusion-matrix screenshot to `assets/`** if available. See [`VALIDATION.md`](VALIDATION.md) for how these were measured and the 3-Source check.
+
+| Metric | Value |
+|---|---|
+| **Accuracy** *(required)* | `___` |
+| Precision *(optional)* | `___` |
+| Recall *(optional)* | `___` |
+| F1 Score *(optional)* | `___` |
+| Other | `___` |
+
+### Per-class performance *(optional)*
+
+| Class | Metric | Value |
+|---|---|---|
+| `<Class A>` | Accuracy | `___` |
+| `<Class B>` | Accuracy | `___` |
+
+---
+
+## Limitations
+
+- `<Known failure cases — when does it get things wrong?>`
+- `<Data gaps — e.g. only daytime images, only one crop variety, small dataset>`
+- `<Bias risks — who or what might it work worse for?>`
+- This prototype has **not** been validated for production use.
+
+---
+
+## Responsible-AI Checklist
+
+Tick every box before submission. This is reviewed at your defence.
+
+- [ ] **No facial recognition or biometric identification** is used (programme rule — MoU §9).
+- [ ] Any images, video, or personal data were collected **with consent**, and that consent is stored.
+- [ ] Data is handled in a **DPDP-compliant** way (no sharing of personal data without basis).
+- [ ] I checked for **obvious bias** and considered **who could be harmed** if this were misused.
+- [ ] I understand this is a **learning prototype, not a certified product.**
+
+---
+
+## How to Run / Try It
+
+**Live demo / link:** `<Teachable Machine link / Hugging Face Space URL / deployed app — or "runs locally">`
+
+**Steps to try it:**
+1. `<step 1 — e.g. open the link above>`
+2. `<step 2 — e.g. upload an image / enter input>`
+3. `<step 3 — what to expect>`
+
+**Code (only if your model is code-based — skip for no-code):**
+
+```python
+# Example inference code or run instructions
+```
+
+---
+
+## Citation
+
+Cite anything you built on:
+- **Dataset(s):** `<e.g. data.gov.in, AI4Bharat, Kaggle India, ISRO Bhuvan — name + URL>`
+- **Base model (if any):** `<e.g. Teachable Machine, MobileNetV2, a Hugging Face model>`
+
+---
+
+<sub>Model-card format adapted from Mitchell et al. 2019, *Model Cards for Model Reporting* (arXiv:1810.03993). This card is a learning exercise — it trains you to think about what you build: who it affects, where it fails, and whether it should be deployed.</sub>
