@@ -72,6 +72,23 @@ Each folder should contain:
 
 ---
 
+## Which File Do I Open?
+
+| File | What it's for | When you update it |
+| :--- | :--- | :--- |
+| `README.md` | Your portfolio front page + the module status table | Tick off each module as you finish it |
+| `AI_USAGE.md` | A one-line log of **every** AI use, with how you verified it | After any session where you used AI |
+| `prompt-log.md` | Your key prompts and **how you improved them** (this is graded) | Each significant AI interaction — then put its `PL-` ID in `AI_USAGE.md` |
+| `m01…m06/` folders | Your actual work — files, screenshots, demo links | Every session — commit something |
+| `VALIDATION.md` | Per-deliverable report: what it does, how you tested it, the 3-Source check, defence checklist | Once per module deliverable |
+| `MODEL_CARD.md` | **Only if you trained a model** — what it is, its limits, and ethics | When your deliverable is a model (e.g. m04 classifier, some m06 projects) |
+
+**The flow for each module:** build it in the module folder → log your AI use in `AI_USAGE.md` and `prompt-log.md` → write a `VALIDATION.md` (add a `MODEL_CARD.md` if it's a model) → tick the status in this README → **commit.**
+
+> Golden rule: every session ends with a commit. An empty repo at the end of the day means the work didn't happen.
+
+---
+
 ## AI Ethics & Integrity Declaration
 
 **AI Usage Log** — see [`AI_USAGE.md`](AI_USAGE.md)
