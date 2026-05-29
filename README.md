@@ -1,19 +1,40 @@
 <p align="center">
-  <img src="assets/polytechnic-logo.png" height="80" alt="Government Polytechnic Bhubaneswar Logo" style="vertical-align: middle; margin-right: 16px;" />
-  <img src="assets/ooumph-logo.png" height="65" alt="Ooumph Logo" style="vertical-align: middle; margin-left: 16px;" />
+  <img src="assets/polytechnic-logo.png" height="80" alt="Government Polytechnic Bhubaneswar Logo" />
+  &nbsp;&nbsp;
+  <img src="assets/ooumph-logo.png" height="65" alt="Ooumph Logo" />
 </p>
 
 # Foundation 2026 — `<Student Name>` (`<Roll Number>`)
-### Band `<A/B/C>` · Branch: `<Branch/Discipline>`
-**Applied AI CoE · Government Polytechnic, Bhubaneswar × Ooumph**
+
+**Band:** `<A/B/C>` &nbsp;·&nbsp; **Branch:** `<Branch/Discipline>`
+
+**Applied AI Centre of Excellence — Government Polytechnic, Bhubaneswar × Ooumph**
 
 ---
 
-Welcome to my portfolio repository. This houses all my work, projects, and deliverables completed during the Foundation 2026 course.
+## About This Repository
 
-## 📌 Module Deliverables & Progress
+This repository serves as my official Applied AI Foundation Programme portfolio. It contains all assignments, exercises, experiments, projects, documentation, and supporting artefacts completed throughout the programme.
 
-| Module | Deliverable | Folder Link | Status |
+All submissions maintained here may be reviewed during assessments, demonstrations, and oral defences.
+
+---
+
+## Before You Start
+
+After creating this repository from the Foundation Template:
+
+1. Replace all placeholders in this README.
+2. Update your name, roll number, band, and branch.
+3. Make your first commit.
+4. Share your repository URL with your trainer.
+5. Keep this repository updated throughout the programme.
+
+---
+
+## Module Deliverables & Progress
+
+| Module | Deliverable | Folder | Status |
 | :--- | :--- | :--- | :---: |
 | **m01** · AI Landscape | Hallucination Hunt — 5 documented LLM errors | [m01-ai-landscape](m01-ai-landscape/) | ⬜ |
 | **m02** · Prompting | Prompt Library — 10 RTCFC prompts | [m02-prompting](m02-prompting/) | ⬜ |
@@ -22,11 +43,55 @@ Welcome to my portfolio repository. This houses all my work, projects, and deliv
 | **m05** · Automation | Working automation (Make/n8n) | [m05-automation](m05-automation/) | ⬜ |
 | **m06** · Mini-Project | Branch-specific AI prototype | [m06-mini-project](m06-mini-project/) | ⬜ |
 
+Update the status column as you complete each module.
+
+**Suggested progress markers:**
+* ⬜ Not Started
+* 🟨 In Progress
+* ✅ Completed
+
 ---
 
-## ⚖️ AI Ethics & Integrity Declaration
-* **AI Usage Log:** See [`AI_USAGE.md`](AI_USAGE.md)
-* **Prompt Log:** See [`prompt-log.md`](prompt-log.md)
+## Repository Structure
 
-> I verify every AI output before submission, disclose my prompts, and am prepared to explain any part of this repository in a live oral defence.
+```text
+m01-ai-landscape/
+m02-prompting/
+m03-data/
+m04-nocode-vision/
+m05-automation/
+m06-mini-project/
+```
 
+Each folder should contain:
+* Deliverables
+* Documentation
+* Screenshots (if applicable)
+* Supporting files
+* Links to deployed solutions or demonstrations
+
+---
+
+## AI Ethics & Integrity Declaration
+
+**AI Usage Log** — see [`AI_USAGE.md`](AI_USAGE.md)
+**Prompt Log** — see [`prompt-log.md`](prompt-log.md)
+
+All significant AI-assisted work should be documented.
+
+---
+
+## Assessment Requirements
+
+I understand that:
+* AI assistance must be disclosed.
+* Prompts must be documented.
+* Outputs must be verified before submission.
+* I may be asked to explain any part of this repository.
+* I am responsible for all content submitted under my name.
+
+---
+
+## Portfolio Statement
+
+> I verify that all work in this repository represents my learning and contributions during the Applied AI Foundation Programme. I am prepared to explain, demonstrate, and defend any submission contained within this repository.
